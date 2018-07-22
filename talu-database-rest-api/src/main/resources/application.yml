@@ -3,6 +3,9 @@
 spring:
   profiles:
     active: lu
+  data:
+    rest:
+      basePath: /api
 
 server:
   error:
