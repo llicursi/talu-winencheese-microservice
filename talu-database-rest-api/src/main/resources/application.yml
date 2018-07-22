@@ -1,0 +1,10 @@
+# Default profiler is lu, but if you are testing everything on localhost, use profile ta
+# Default server port is also different
+spring:
+  profiles:
+    active: lu
+
+server:
+  error:
+    whitelabel:
+      enabled: false

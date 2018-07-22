@@ -1,0 +1,12 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: winencheese-service
+eureka:
+  instance:
+    statusPageUrlPath: /info
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.227:8877/eureka
