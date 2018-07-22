@@ -19,7 +19,7 @@ import java.util.List;
 
 public class EurekaClientApp {
     public static void main(String[] args) {
-        SpringApplication.run(EurekaClientApp.class,args);
+        SpringApplication.run(EurekaClientApp.class, args);
     }
 }
 
@@ -33,6 +33,22 @@ class ServiceInstanceRestController {
     public List<ServiceInstance> serviceInstances(
             @PathVariable String applicationName) {
         return this.discoveryClient.getInstances(applicationName);
+    }
+
+    @RequestMapping("/home")
+    public String home() {
+        return "Hello! You are on my home page!";
+    }
+
+    @RequestMapping("/info")
+    public String info() {
+        return "You are connecting to the winencheese consumer, here you can log in you favorite " +
+                "Wines and Cheeses!";
+    }
+
+    @RequestMapping("/consume")
+    public String consume() {
+        return "Need to connect to Lu microservice";
     }
 }
 
