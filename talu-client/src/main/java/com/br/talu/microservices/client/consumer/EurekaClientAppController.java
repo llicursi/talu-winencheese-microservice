@@ -1,30 +1,16 @@
-package com.br.talu.microservices;
-
+package com.br.talu.microservices.client.consumer;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@SpringBootApplication
-@EnableDiscoveryClient()
-
-public class EurekaClientApp {
-    public static void main(String[] args) {
-        SpringApplication.run(EurekaClientApp.class, args);
-    }
-}
-
 @RestController
-class ServiceInstanceRestController {
+public class EurekaClientAppController {
 
     @Autowired
     private DiscoveryClient discoveryClient;
@@ -51,4 +37,3 @@ class ServiceInstanceRestController {
         return "Need to connect to Lu microservice";
     }
 }
-
