@@ -1,0 +1,28 @@
+server:
+  port: 8070
+
+# Trying to disable discovery and eureka
+spring:
+  cloud:
+    service-registry.auto-registration.enabled : false
+    config:
+      enabled : false
+      discovery:
+        enabled : false
+    discovery:
+      enabled : false
+# H2 Database configuration
+# Only needed if you are configuring a single server for multiple instances
+  h2:
+    console:
+      enabled: true
+      path: /h2_console
+  datasource:
+    url : jdbc:h2:tcp://localhost/~/test
+    username : sa
+    password :
+    driverClassName : org.h2.Driver
+  jpa:
+    show-sql : true
+    hibernate:
+      ddl-auto :  update
