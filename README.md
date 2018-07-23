@@ -3,19 +3,16 @@ A microservice study using Java, Spring and Eureka to catalog Lucas and Tatiane 
 
 ## Technologies
 Just listing the remarkable ones and other that really *caught our eyes*.
-### Netflix 
- ![Netflix OSS image logo][netflix-logo]
- * Eureka 
- * Kuul
-### Spring 
- ![Sprign cloud, a leaf inside a cloud][spring-logo]
- * Cloud
- * Boot
- * Data Rest
- * MVC
 
-### Others
- * Project Lombok - Never write Getters and Setter again.
+![nf][netflix-logo] ![sp-c][spring-logo]
+
+|### Netflix  | ### Spring | ### Other |
+| ---         | ---        | ---       |
+| **Eureka**  | **Cloud**  | Lombok    |
+| **Kuul**    | Boot       | Vaadin    |
+|             | Data Rest  |           |
+|             | MVC        |           |
+
  * `empty space for more stuff to test` 
 
 ## Sub projects
