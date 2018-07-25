@@ -4,6 +4,7 @@ import com.br.talu.microservices.models.wine.GrapeType;
 import com.br.talu.microservices.models.wine.Wine;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -12,7 +13,7 @@ public class HomeController {
     @Autowired
     private WineRepository wineRepository;
 
-    @RequestMapping("/data/populate/")
+    @RequestMapping(value = "/data/populate/", method = RequestMethod.GET, consumes = "*/*", name = "Populate")
     public String populateDummyDatatabase(){
         Wine cabernet = new Wine();
         cabernet.setName("Cosecha de Tarapaca");

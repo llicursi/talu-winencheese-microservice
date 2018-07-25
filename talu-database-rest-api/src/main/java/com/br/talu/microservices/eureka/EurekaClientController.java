@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @Profile("!noeureka")
+@EnableDiscoveryClient()
 public class EurekaClientController {
 
     @Autowired

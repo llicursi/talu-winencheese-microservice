@@ -5,7 +5,7 @@ spring:
     active: lu
   data:
     rest:
-      basePath: /api
+      basePath: /api/v1
 
 server:
   error:

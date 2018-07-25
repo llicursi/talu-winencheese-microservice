@@ -12,7 +12,6 @@ import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
 
 @SpringBootApplication
-@EnableDiscoveryClient()
 public class Application {
 
     public static void main(String[] args)  {
@@ -20,11 +19,12 @@ public class Application {
         System.out.println("My server is on!");
     }
 
-
+/*
     @PostConstruct
     @Transactional
     public void onLoad(){
 
     }
+*/
 
 }
