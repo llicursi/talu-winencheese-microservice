@@ -29,5 +29,11 @@ public class EurekaClientController {
     public String info() {
         return "It is the database service!";
     }
+
+
+    @RequestMapping("/retrieve-info")
+    public String retrieveData() {
+        return "It is the database service!";
+    }
 }
 
